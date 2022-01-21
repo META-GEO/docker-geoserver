@@ -30,15 +30,15 @@ RUN set -e \
 ENV \
     JAVA_HOME=${JAVA_HOME} \
     DEBIAN_FRONTEND=noninteractive \
-    GEOSERVER_DATA_DIR=/mg-geoserver-data/data_dir \
+    GEOSERVER_DATA_DIR=/opt/geoserver/data_dir \
     GDAL_DATA=/usr/local/gdal_data \
     LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/gdal_native_libs:/usr/local/tomcat/native-jni-lib:/usr/lib/jni:/usr/local/apr/lib:/opt/libjpeg-turbo/lib64:/usr/lib:/usr/lib/x86_64-linux-gnu" \
     FOOTPRINTS_DATA_DIR=/opt/footprints_dir \
-    GEOWEBCACHE_CACHE_DIR=/mg-geoserver-data/data_dir/gwc \
+    GEOWEBCACHE_CACHE_DIR=/opt/geoserver/data_dir/gwc \
     CERT_DIR=/etc/certs \
     RANDFILE=/etc/certs/.rnd \
     FONTS_DIR=/opt/fonts \
-    GEOSERVER_HOME=/mg-geoserver-data \
+    GEOSERVER_HOME=/geoserver \
     EXTRA_CONFIG_DIR=/settings
 
 
